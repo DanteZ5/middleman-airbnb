@@ -2,14 +2,30 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1516914589923-f105f1535f88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f412a6ee4af609b0e3f4f85248f2879f&auto=format&fit=crop&w=1950&q=80');">
+  <div class="banner-content">
+    <h1>Train with Middleman</h1>
+    <p>Trying to use middleman & ERB</p>
+    <a class="btn btn-primary btn-lg">Let's go</a>
   </div>
 </div>
+
+<div class="container">
+  <div class="row">
+    <% 9.times do |i|%>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Place to visit</h2>
+          <p>Very cool place, the best</p>
+        </div>
+        <img class="card-user" src="https://www.tomas6k.fr/wp-content/uploads/2016/09/fusee-tomas.png">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
